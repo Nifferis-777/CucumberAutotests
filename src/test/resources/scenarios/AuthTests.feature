@@ -9,9 +9,9 @@ Feature: Logging in to the site using different usernames
       And I press the login button
       Then I get to the product page where the shopping cart is displayed
 
-  Scenario: I enter the login and password for locked_out_user, click the login button, and receive a warning-login error, since the user is locked out.
-    When I enter the login from locked_out_user
-    And I enter the password for locked_out_user
-    And I press the login button
-    Then I get a warning - login error because the user is blocked
+    Scenario: I enter the login and password for locked_out_user, click the login button, and receive a warning-login error, since the user is locked out.
+      When I enter the login from locked_out_user
+      And I enter the password for locked_out_user
+      And I press the login button
+      Then I get a warning - login error because the user is blocked
 
